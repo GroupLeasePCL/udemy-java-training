@@ -5,15 +5,17 @@ import java.util.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        MyLinkList list = new MyLinkList(null);
-        list.traverse(list.getRoot());
+        SearchTree tree = new SearchTree(null);
+        tree.traverse(tree.getRoot());
 
 //        create array data
-        String arrData = "Pig Dog Cow Lion";
+        String arrData = "1 2 3 4 5";
         String[] data = arrData.split(" ");
         for(String s : data){
-            list.addItem(new Node(s));
+            tree.addItem(new Node(s));
         }
-        list.traverse(list.getRoot());
+        tree.traverse(tree.getRoot());
+        tree.removeItem(new Node("2"));
+        tree.traverse(tree.getRoot());
     }
 }
