@@ -1,6 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
 
@@ -15,7 +17,9 @@ public class Main {
             tree.addItem(new Node(s));
         }
         tree.traverse(tree.getRoot());
-        tree.removeItem(new Node("2"));
+        tree.removeItem(new Node("4"));
         tree.traverse(tree.getRoot());
+
+
     }
 }
